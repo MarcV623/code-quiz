@@ -47,6 +47,12 @@ const answerBBtn = document.querySelector("#answer-b")
 const answerCBtn = document.querySelector("#answer-c") 
 const answerDBtn = document.querySelector("#answer-d")
 
+// Added eventListener() to buttons
+answerABtn.addEventListener("click", handleClick)
+answerBBtn.addEventListener("click", handleClick)
+answerCBtn.addEventListener("click", handleClick)
+answerDBtn.addEventListener("click", handleClick)
+
 // Update page with first question
 questionText.innerHTML = questions[0].question
 answerABtn.innerHTML = questions[0].answers[0].answer
@@ -134,5 +140,7 @@ function writePassword() {
   passwordText.value = password;
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+function handleClick() {
+  console.log("Hello World!")
+}
+
