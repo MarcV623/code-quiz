@@ -28,12 +28,21 @@ const questions = [
     ]
   },
   {
-    question: "Which HTML elements do we put in javascript code?",
+    question: "Where is the correct place to insert a javascript?",
     answers: [
-      { answer: "<script>", correct: true },
-      { answer: "<js>", correct: false },
-      { answer: "<body>", correct: false },
-      { answer: "<head>", correct: false }
+      { answer: "the head section", correct: true },
+      { answer: "the body section", correct: false },
+      { answer: "both the head and the body sections", correct: false },
+      { answer: "in the p tag", correct: false }
+    ]
+  },
+  {
+    question: "The external javascript file must contain?",
+    answers: [
+      {answer: "a script tag", correct: true },
+      {answer: "a h1", correct: false },
+      {answer: "an Id", correct: false },
+      {answer: "a class", correct: false}
     ]
   }
 ]
